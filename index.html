@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>La Buenavida Restaurante</title>
+
+        <!-- CSS FILES -->    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        
+        
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <a class="navbar-nombre" href="index.html">
+                    La Buenavida Restaurante
+                </a>
+
+                <div class="d-lg-none">
+                    <button type="button" class="boton btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservas</button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+
+                    
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <button type="button" class="boton btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservas</button>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-12 m-auto">
+                            <div class="heroText">
+
+                                <h1 class="text-white mb-lg-5 mb-3">Puntas de Solomillo</h1>
+
+                                <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <h4 class="text-white mb-0 me-3">4.2/5</h4>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-white w-100">Más de <strong>800+</strong> Reseñas de Clientes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-12">
+                            <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="carousel-image-wrap">
+                                            <img src="images/slide/restaurante1.png" class="img-fluid carousel-image" alt="">
+                                        </div>
+                                        
+                                        <div class="carousel-caption">
+                                            <span class="text-white">
+                                                <i class="bi-geo-alt me-2"></i>
+                                                Santa Cruz de Tenerife, España
+                                            </span>
+
+                                            <h4 class="hero-text">Restaurante de Cocina Mediterránea</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="carousel-image-wrap">
+                                            <img src="images/slide/salmon.png" class="img-fluid carousel-image" alt="">
+                                        </div>
+                                        
+                                        <div class="carousel-caption">
+                                            <div class="d-flex align-items-center">
+                                                <h4 class="hero-text">Salmón</h4>
+
+                                                <span class="price-tag ms-4"><small>€</small>16.50</span>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <h5 class="reviews-text mb-0 me-3">4.8/5</h5>
+
+                                                <div class="reviews-stars">
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star reviews-icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="carousel-image-wrap">
+                                            <img src="images/slide/barman.png" class="img-fluid carousel-image" alt="">
+                                        </div>
+                                        
+                                        <div class="carousel-caption">
+                                            <div class="d-flex align-items-center">
+                                                <h4 class="hero-text">Cocktails De Todo Tipo</h4>
+
+                                                <span class="price-tag ms-4"><small>€</small>8.00</span>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <h5 class="reviews-text mb-0 me-3">5/5</h5>
+
+                                                <div class="reviews-stars">
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    <i class="bi-star-fill reviews-icon"></i>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="video/RNFetchBlobTmp_24cu0nlpdjrcsadmafvmih.mp4" type="video/mp4">
+                        Tu navegador no es compatible con la reproducción de video.
+                    	</video>
+                </div>
+
+                <div class="overlay"></div>
+            </section>
+
+            <section class="menu section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="text-center mb-lg-5 mb-4">¡Oído cocina!</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="menu-thumb">
+                                <div class="menu-image-wrap">
+                                    <img src="images/desayuno/tosta.png" class="img-fluid menu-image" alt="">
+
+                                    <span class="menu-tag bg-warning">Tablas</span>
+                                </div>
+
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Tostas</h4>
+
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>€</small>5.50</span>
+
+                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p class="reviews-text mb-0 ms-4">21 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="menu-thumb">
+                                <div class="menu-image-wrap">
+                                    <img src="images/carnes y pescados/carne.png" class="img-fluid menu-image" alt="">
+
+                                    <span class="menu-tag bg-warning">Carnes</span>
+                                </div>
+
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Solomillo</h4>
+
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>€</small>20.00</span>
+
+                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 class="reviews-text mb-0 me-3">3/5</h6>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p class="reviews-text mb-0 ms-4">37 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="menu-thumb">
+                                <div class="menu-image-wrap">
+                                    <img src="images/almuerzo y postres/plato.png" class="img-fluid menu-image" alt="">
+
+                                    <span class="menu-tag bg-warning">Carnes</span>
+                                </div>
+
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Magret De Pato</h4>
+
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>€</small>22.00</span>
+
+                                    <del class="ms-4"><small>€</small>27</del>
+
+                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 class="reviews-text mb-0 me-3">4.1/5</h6>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p class="reviews-text mb-0 ms-4">43 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="menu-thumb">
+                                <div class="menu-image-wrap">
+                                    <img src="images/entrantes/croquetas.png" class="img-fluid menu-image" alt="">
+
+                                    <span class="menu-tag bg-warning">Entrantes</span>
+                                </div>
+
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Croquetas</h4>
+
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>€</small>9.00</span>
+
+                                   
+
+                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 class="reviews-text mb-0 me-3">4.9/5</h6>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p class="reviews-text mb-0 ms-4">83 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="menu-thumb">
+                                <div class="menu-image-wrap">
+                                    <img src="images/ensaladas/ensalada.png" class="img-fluid menu-image" alt="">
+
+                                    <span class="menu-tag bg-warning">Ensaladas</span>
+                                </div>
+
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">De Langostino</h4>
+
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>€</small>13.00</span>
+
+                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p class="reviews-text mb-0 ms-4">49 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="menu-thumb">
+                                <div class="menu-image-wrap">
+                                    <img src="images/almuerzo y postres/postre flan.png" class="img-fluid menu-image" alt="">
+
+                                    <span class="menu-tag bg-warning">Postres</span>
+                                </div>
+
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Flan De Cadbury</h4>
+
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>€</small>5.00</span>
+
+                                    <div class="d-flex flex-wrap align-items-center w-100 mt-2">
+                                        <h6 class="reviews-text mb-0 me-3">3.8/5</h6>
+
+                                        <div class="reviews-stars">
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star-fill reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                            <i class="bi-star reviews-icon"></i>
+                                        </div>
+
+                                        <p class="reviews-text mb-0 ms-4">21 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer section-padding">
+            
+            <div class="container">
+                
+                <div class="row">
+
+                    <div class="col-12">
+                        <h4 class="text-white mb-4 me-5">La Buenavida Restaurante</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                        <h6 class="text-white mb-lg-4 mb-3">Ubicación</h6>
+
+                        <p>La Buena Vida, C. Antonio Domínguez Alfonso, 10, 38003 Santa Cruz de Tenerife, España</p>
+
+                        <a href="https://maps.app.goo.gl/2kfCzCEyCxByhJto9" class="boton btn btn-dark mt-2">Dirección</a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                        <h6 class="text-white mb-lg-4 mb-3">Abiertos</h6>
+
+                        <p class="mb-2">Lunes - Jueves / Domingo</p>
+
+                        <p>12:00 AM - 16:00 PM</p> 
+                        <p>20:00 PM - 23:00 PM</p> 
+
+                        <p class="mb-2">Viernes y Sábado</p>
+
+                        <p>12:00 AM - 23:30 PM</p>
+
+
+                        <p>Tel: <a href="tel: +34922241913" class="tel-link">922 241 913</a></p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                        <h6 class="text-white mb-lg-4 mb-3">Redes Sociales</h6>
+
+                        <ul class="social-icon">
+                            
+                            <li><a href="https://www.instagram.com/buenavida_restaurante?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon-link bi-instagram"></a></li>
+
+                           
+                        </ul>
+                    
+                        <p class="copyright-text tooplate-mt60">Copyright © 2025 La Buenavida Restaurante
+                        <br>Design: <a rel="nofollow" href="https://www.linkedin.com/in/mauricioandressiveriorodriguez/" target="_blank">MASR</a></p>
+                        
+                    </div>
+
+                </div><!-- row ending -->
+                
+             </div><!-- container ending -->
+             
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="mb-0">Reservar Mesa</h3>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body d-flex flex-column justify-content-center">
+                        <div class="booking">
+                            
+                            <form class="booking-form row" role="form" action="#" method="post">
+                                <div class="col-lg-6 col-12">
+                                    <label for="name" class="form-label">Nombre Completo</label>
+
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="ejemplo@email.com" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="phone" class="form-label">Número de Teléfono</label>
+
+                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="people" class="form-label">Número de Personas</label>
+
+                                    <input type="text" name="people" id="people" class="form-control" placeholder="5 personas">
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="date" class="form-label">Día</label>
+
+                                    <input type="date" name="date" id="date" value="" class="form-control">
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="time" class="form-label">Hora de Reserva</label>
+
+                                    <select class="form-select form-control" name="time" id="time">
+                                        <optgroup label="Lunes a Jueves / Domingo - Almuerzo">
+                                            <option value="12:00">12:00</option>
+                                            <option value="12:15">12:15</option>
+                                            <option value="12:30">12:30</option>
+                                            <option value="12:45">12:45</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="13:15">13:15</option>
+                                            <option value="13:30">13:30</option>
+                                            <option value="13:45">13:45</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="14:15">14:15</option>
+                                            <option value="14:30">14:30</option>
+                                            <option value="14:45">14:45</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="15:15">15:15</option>
+                                            <option value="15:30">15:30</option>
+                                            <option value="15:45">15:45</option>
+                                          </optgroup>
+                                        
+                                          <optgroup label="Lunes a Jueves / Domingo - Cena">
+                                            <option value="20:00">20:00</option>
+                                            <option value="20:15">20:15</option>
+                                            <option value="20:30">20:30</option>
+                                            <option value="20:45">20:45</option>
+                                            <option value="21:00">21:00</option>
+                                            <option value="21:15">21:15</option>
+                                            <option value="21:30">21:30</option>
+                                            <option value="21:45">21:45</option>
+                                            <option value="22:00">22:00</option>
+                                            <option value="22:15">22:15</option>
+                                            <option value="22:30">22:30</option>
+                                            <option value="22:45">22:45</option>
+                                          </optgroup>
+                                        
+                                          <!-- Horario Viernes y Sábado -->
+                                          <optgroup label="Viernes y Sábado - Horario Continuo">
+                                            <option value="12:00">12:00</option>
+                                            <option value="12:15">12:15</option>
+                                            <option value="12:30">12:30</option>
+                                            <option value="12:45">12:45</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="13:15">13:15</option>
+                                            <option value="13:30">13:30</option>
+                                            <option value="13:45">13:45</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="14:15">14:15</option>
+                                            <option value="14:30">14:30</option>
+                                            <option value="14:45">14:45</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="15:15">15:15</option>
+                                            <option value="15:30">15:30</option>
+                                            <option value="15:45">15:45</option>
+                                            <option value="16:00">16:00</option>
+                                            <!-- Cena continúa sin descanso -->
+                                            <option value="16:15">16:15</option>
+                                            <option value="16:30">16:30</option>
+                                            <option value="16:45">16:45</option>
+                                            <option value="17:00">17:00</option>
+                                            <option value="17:15">17:15</option>
+                                            <option value="17:30">17:30</option>
+                                            <option value="17:45">17:45</option>
+                                            <option value="18:00">18:00</option>
+                                            <option value="18:15">18:15</option>
+                                            <option value="18:30">18:30</option>
+                                            <option value="18:45">18:45</option>
+                                            <option value="19:00">19:00</option>
+                                            <option value="19:15">19:15</option>
+                                            <option value="19:30">19:30</option>
+                                            <option value="19:45">19:45</option>
+                                            <option value="20:00">20:00</option>
+                                            <option value="20:15">20:15</option>
+                                            <option value="20:30">20:30</option>
+                                            <option value="20:45">20:45</option>
+                                            <option value="21:00">21:00</option>
+                                            <option value="21:15">21:15</option>
+                                            <option value="21:30">21:30</option>
+                                            <option value="21:45">21:45</option>
+                                            <option value="22:00">22:00</option>
+                                            <option value="22:15">22:15</option>
+                                            <option value="22:30">22:30</option>
+                                            <option value="22:45">22:45</option>
+                                            <option value="23:00">23:00</option>
+                                            <option value="23:15">23:15</option>
+                                          </optgroup>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Comentarios</label>
+
+                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto">
+                                    <button type="button" id="whatsapp-reserva" class="form-control">RESERVAR</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer"></div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            document.getElementById('whatsapp-reserva').addEventListener('click', function () {
+              const nombre = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const telefono = document.getElementById('phone').value;
+              const personas = document.getElementById('people').value;
+              const fecha = document.getElementById('date').value;
+              const hora = document.getElementById('time').value;
+              const comentario = document.getElementById('message').value;
+          
+              const numeroDestino = '34656841155'; 
+          
+              const mensaje = `📅 *Nueva reserva desde la web*:\n\n👤 Nombre: ${nombre}\n📧 Email: ${email}\n📞 Teléfono: ${telefono}\n👥 Nº de personas: ${personas}\n📆 Día: ${fecha}\n🕒 Hora: ${hora}\n💬 Comentarios: ${comentario}`;
+          
+              const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensaje)}`;
+          
+              window.open(url, '_blank');
+            });
+          </script>
+
+    </body>
+</html>
