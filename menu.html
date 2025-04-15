@@ -389,165 +389,227 @@
              
         </footer>
 
-        <!-- Modal -->
-        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="mb-0">Reservar Mesa</h3>
+       <!-- Modal -->
+       <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="mb-0">Reservar Mesa</h3>
 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body d-flex flex-column justify-content-center">
-                        <div class="booking">
-                            
-                            <form class="booking-form row" role="form" action="#" method="post">
-                                <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Nombre Completo</label>
-
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Correo Electrónico</label>
-
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="ejemplo@email.com" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="phone" class="form-label">Número de Teléfono</label>
-
-                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="people" class="form-label">Número de Personas</label>
-
-                                    <input type="text" name="people" id="people" class="form-control" placeholder="5 personas">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="date" class="form-label">Día</label>
-
-                                    <input type="date" name="date" id="date" value="" class="form-control">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="time" class="form-label">Hora de Reserva</label>
-
-                                    <select class="form-select form-control" name="time" id="time">
-                                        <optgroup label="Lunes a Jueves / Domingo - Almuerzo">
-                                            <option value="12:00">12:00</option>
-                                            <option value="12:15">12:15</option>
-                                            <option value="12:30">12:30</option>
-                                            <option value="12:45">12:45</option>
-                                            <option value="13:00">13:00</option>
-                                            <option value="13:15">13:15</option>
-                                            <option value="13:30">13:30</option>
-                                            <option value="13:45">13:45</option>
-                                            <option value="14:00">14:00</option>
-                                            <option value="14:15">14:15</option>
-                                            <option value="14:30">14:30</option>
-                                            <option value="14:45">14:45</option>
-                                            <option value="15:00">15:00</option>
-                                            <option value="15:15">15:15</option>
-                                            <option value="15:30">15:30</option>
-                                            <option value="15:45">15:45</option>
-                                          </optgroup>
-                                        
-                                          <optgroup label="Lunes a Jueves / Domingo - Cena">
-                                            <option value="20:00">20:00</option>
-                                            <option value="20:15">20:15</option>
-                                            <option value="20:30">20:30</option>
-                                            <option value="20:45">20:45</option>
-                                            <option value="21:00">21:00</option>
-                                            <option value="21:15">21:15</option>
-                                            <option value="21:30">21:30</option>
-                                            <option value="21:45">21:45</option>
-                                            <option value="22:00">22:00</option>
-                                            <option value="22:15">22:15</option>
-                                            <option value="22:30">22:30</option>
-                                            <option value="22:45">22:45</option>
-                                          </optgroup>
-                                        
-                                          <!-- Horario Viernes y Sábado -->
-                                          <optgroup label="Viernes y Sábado - Horario Continuo">
-                                            <option value="12:00">12:00</option>
-                                            <option value="12:15">12:15</option>
-                                            <option value="12:30">12:30</option>
-                                            <option value="12:45">12:45</option>
-                                            <option value="13:00">13:00</option>
-                                            <option value="13:15">13:15</option>
-                                            <option value="13:30">13:30</option>
-                                            <option value="13:45">13:45</option>
-                                            <option value="14:00">14:00</option>
-                                            <option value="14:15">14:15</option>
-                                            <option value="14:30">14:30</option>
-                                            <option value="14:45">14:45</option>
-                                            <option value="15:00">15:00</option>
-                                            <option value="15:15">15:15</option>
-                                            <option value="15:30">15:30</option>
-                                            <option value="15:45">15:45</option>
-                                            <option value="16:00">16:00</option>
-                                            <!-- Cena continúa sin descanso -->
-                                            <option value="16:15">16:15</option>
-                                            <option value="16:30">16:30</option>
-                                            <option value="16:45">16:45</option>
-                                            <option value="17:00">17:00</option>
-                                            <option value="17:15">17:15</option>
-                                            <option value="17:30">17:30</option>
-                                            <option value="17:45">17:45</option>
-                                            <option value="18:00">18:00</option>
-                                            <option value="18:15">18:15</option>
-                                            <option value="18:30">18:30</option>
-                                            <option value="18:45">18:45</option>
-                                            <option value="19:00">19:00</option>
-                                            <option value="19:15">19:15</option>
-                                            <option value="19:30">19:30</option>
-                                            <option value="19:45">19:45</option>
-                                            <option value="20:00">20:00</option>
-                                            <option value="20:15">20:15</option>
-                                            <option value="20:30">20:30</option>
-                                            <option value="20:45">20:45</option>
-                                            <option value="21:00">21:00</option>
-                                            <option value="21:15">21:15</option>
-                                            <option value="21:30">21:30</option>
-                                            <option value="21:45">21:45</option>
-                                            <option value="22:00">22:00</option>
-                                            <option value="22:15">22:15</option>
-                                            <option value="22:30">22:30</option>
-                                            <option value="22:45">22:45</option>
-                                            <option value="23:00">23:00</option>
-                                            <option value="23:15">23:15</option>
-                                          </optgroup>
-                                    </select>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Comentarios</label>
-
-                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
-                                </div>
-
-                                <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">RESERVAR</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer"></div>
-                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+                <div class="modal-body d-flex flex-column justify-content-center">
+                    <div class="booking">
+                        
+                        <form class="booking-form row" role="form" action="#" method="post">
+                            <div class="col-lg-6 col-12">
+                                <label for="name" class="form-label">Nombre Completo</label>
+
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Nombre y Apellido" required>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="ejemplo@email.com" required>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="phone" class="form-label">Número de Teléfono</label>
+
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Ej: 666123456" required>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="people" class="form-label">Número de Personas</label>
+
+                                <input type="text" name="people" id="people" class="form-control" placeholder="5 personas">
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="date" class="form-label">Día</label>
+
+                                <input type="date" name="date" id="date" value="" class="form-control">
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="time" class="form-label">Hora de Reserva</label>
+
+                                <select class="form-select form-control" name="time" id="time">
+                                    <optgroup label="Lunes a Jueves / Domingo - Almuerzo">
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:15">12:15</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="12:45">12:45</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:15">13:15</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="13:45">13:45</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:15">14:15</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="14:45">14:45</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:15">15:15</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="15:45">15:45</option>
+                                      </optgroup>
+                                    
+                                      <optgroup label="Lunes a Jueves / Domingo - Cena">
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:15">20:15</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="20:45">20:45</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:15">21:15</option>
+                                        <option value="21:30">21:30</option>
+                                        <option value="21:45">21:45</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="22:15">22:15</option>
+                                        <option value="22:30">22:30</option>
+                                        <option value="22:45">22:45</option>
+                                      </optgroup>
+                                    
+                                      <!-- Horario Viernes y Sábado -->
+                                      <optgroup label="Viernes y Sábado - Horario Continuo">
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:15">12:15</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="12:45">12:45</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:15">13:15</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="13:45">13:45</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:15">14:15</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="14:45">14:45</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:15">15:15</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="15:45">15:45</option>
+                                        <option value="16:00">16:00</option>
+                                        <!-- Cena continúa sin descanso -->
+                                        <option value="16:15">16:15</option>
+                                        <option value="16:30">16:30</option>
+                                        <option value="16:45">16:45</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:15">17:15</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="17:45">17:45</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:15">18:15</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="18:45">18:45</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:15">19:15</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="19:45">19:45</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:15">20:15</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="20:45">20:45</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:15">21:15</option>
+                                        <option value="21:30">21:30</option>
+                                        <option value="21:45">21:45</option>
+                                        <option value="22:00">22:00</option>
+                                        <option value="22:15">22:15</option>
+                                        <option value="22:30">22:30</option>
+                                        <option value="22:45">22:45</option>
+                                        <option value="23:00">23:00</option>
+                                        <option value="23:15">23:15</option>
+                                      </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Comentarios</label>
+
+                                <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
+                            </div>
+
+                            <div class="col-lg-4 col-12 ms-auto">
+                                <button type="button" id="whatsapp-reserva" class="form-control">RESERVAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer"></div>
                 
             </div>
+            
         </div>
+    </div>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/custom.js"></script>
-
-    </body>
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const boton = document.getElementById('whatsapp-reserva');
+          if (boton) {
+            boton.addEventListener('click', function (e) {
+              e.preventDefault(); // ⛔ Evita que el formulario recargue la página
+      
+              const nombre = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const telefono = document.getElementById('phone').value;
+              const personas = document.getElementById('people').value;
+              const fecha = document.getElementById('date').value;
+              const hora = document.getElementById('time').value;
+              const comentario = document.getElementById('message').value;
+      
+              // Validación mínima
+              if (!nombre || !email || !telefono || !personas || !fecha || !hora) {
+                alert("Por favor, completa todos los campos obligatorios.");
+                return;
+              }
+      
+              const numeroDestino = '34656841155'; // 
+      
+              const mensaje = `📅 *Nueva reserva desde la web*:%0A%0A👤 Nombre: ${nombre}%0A📧 Email: ${email}%0A📞 Teléfono: ${telefono}%0A👥 Nº de personas: ${personas}%0A📆 Día: ${fecha}%0A🕒 Hora: ${hora}%0A💬 Comentarios: ${comentario}`;
+      
+              const url = `https://wa.me/${numeroDestino}?text=${mensaje}`;
+              window.open(url, '_blank');
+      
+              // 👇 Cierra el modal
+              const modal = bootstrap.Modal.getInstance(document.getElementById('BookingModal'));
+              if (modal) modal.hide();
+            });
+          }
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const botonCV = document.getElementById('enviar-cv');
+          if (botonCV) {
+            botonCV.addEventListener('click', function (e) {
+              e.preventDefault();
+      
+              const nombre = document.getElementById('contact-name').value;
+              const telefono = document.getElementById('phone').value;
+              const email = document.getElementById('contact-email').value;
+              const mensaje = document.getElementById('contact-message').value;
+              const archivo = document.getElementById('cv').value;
+      
+              if (!nombre || !telefono || !email || !archivo) {
+                alert("Por favor, completa todos los campos y adjunta tu CV.");
+                return;
+              }
+      
+              const numeroDestino = '34656841155'; // Tu número de WhatsApp
+      
+              const texto = `📝 *Nueva solicitud para trabajar en La Buenavida*:%0A%0A👤 Nombre: ${nombre}%0A📞 Teléfono: ${telefono}%0A📧 Email: ${email}%0A💬 Mensaje: ${mensaje || 'Sin mensaje adicional'}%0A📎 *CV adjuntado en el formulario (no se puede enviar por WhatsApp)*`;
+      
+              const url = `https://wa.me/${numeroDestino}?text=${texto}`;
+              window.open(url, '_blank');
+            });
+          }
+        });
+      </script>
+</body>
 </html>

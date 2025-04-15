@@ -74,7 +74,7 @@
                         <div class="col-lg-10 col-12 mx-auto">
                             <h1 class="text-white">Trabaja con Nosotros</h1>
 
-                            <strong class="text-white1">Únete a nuestro equipo y sé parte de la familia BUENAVIDA</strong>
+                            <strong class="text-white1">Únete a nuestro equipo y se parte de la familia BUENAVIDA</strong>
                         </div>
 
                     </div>
@@ -120,7 +120,7 @@
                                 </div>
 
                                 <div class="col-lg-5 col-12 ms-auto">
-                                    <button type="submit" class="form-control">ENVIAR SOLICITUD</button>
+                                    <button type="button" id="enviar-cv" class="form-control">ENVIAR SOLICITUD</button>
                                 </div>
                             </form>
                         </div>
@@ -243,7 +243,7 @@
                                 <div class="col-lg-6 col-12">
                                     <label for="phone" class="form-label">Número de Teléfono</label>
 
-                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Ej: 666123456" required>
                                 </div>
 
                                 <div class="col-lg-6 col-12">
@@ -356,7 +356,7 @@
                                 </div>
 
                                 <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">RESERVAR</button>
+                                    <button type="button" id="whatsapp-reserva" class="form-control">RESERVAR</button>
                                 </div>
                             </form>
                         </div>
@@ -373,6 +373,68 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
-
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const boton = document.getElementById('whatsapp-reserva');
+              if (boton) {
+                boton.addEventListener('click', function (e) {
+                  e.preventDefault(); // ⛔ Evita que el formulario recargue la página
+          
+                  const nombre = document.getElementById('name').value;
+                  const email = document.getElementById('email').value;
+                  const telefono = document.getElementById('phone').value;
+                  const personas = document.getElementById('people').value;
+                  const fecha = document.getElementById('date').value;
+                  const hora = document.getElementById('time').value;
+                  const comentario = document.getElementById('message').value;
+          
+                  // Validación mínima
+                  if (!nombre || !email || !telefono || !personas || !fecha || !hora) {
+                    alert("Por favor, completa todos los campos obligatorios.");
+                    return;
+                  }
+          
+                  const numeroDestino = '34656841155'; // 
+          
+                  const mensaje = `📅 *Nueva reserva desde la web*:%0A%0A👤 Nombre: ${nombre}%0A📧 Email: ${email}%0A📞 Teléfono: ${telefono}%0A👥 Nº de personas: ${personas}%0A📆 Día: ${fecha}%0A🕒 Hora: ${hora}%0A💬 Comentarios: ${comentario}`;
+          
+                  const url = `https://wa.me/${numeroDestino}?text=${mensaje}`;
+                  window.open(url, '_blank');
+          
+                  // 👇 Cierra el modal
+                  const modal = bootstrap.Modal.getInstance(document.getElementById('BookingModal'));
+                  if (modal) modal.hide();
+                });
+              }
+            });
+          </script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const botonCV = document.getElementById('enviar-cv');
+              if (botonCV) {
+                botonCV.addEventListener('click', function (e) {
+                  e.preventDefault();
+          
+                  const nombre = document.getElementById('contact-name').value;
+                  const telefono = document.getElementById('phone').value;
+                  const email = document.getElementById('contact-email').value;
+                  const mensaje = document.getElementById('contact-message').value;
+                  const archivo = document.getElementById('cv').value;
+          
+                  if (!nombre || !telefono || !email || !archivo) {
+                    alert("Por favor, completa todos los campos y adjunta tu CV.");
+                    return;
+                  }
+          
+                  const numeroDestino = '34656841155'; // Tu número de WhatsApp
+          
+                  const texto = `📝 *Nueva solicitud para trabajar en La Buenavida*:%0A%0A👤 Nombre: ${nombre}%0A📞 Teléfono: ${telefono}%0A📧 Email: ${email}%0A💬 Mensaje: ${mensaje || 'Sin mensaje adicional'}%0A📎 *CV adjuntado en el formulario (no se puede enviar por WhatsApp)*`;
+          
+                  const url = `https://wa.me/${numeroDestino}?text=${texto}`;
+                  window.open(url, '_blank');
+                });
+              }
+            });
+          </script>
     </body>
 </html>
